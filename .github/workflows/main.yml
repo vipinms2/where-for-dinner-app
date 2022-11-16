@@ -9,6 +9,7 @@ jobs:
      - run: |
         commit=$(date +%s)
         echo $commit
+        git checkout main
         git pull
         perl -p -i -e "s/Results[0-9]+/Results$commit/g" ~/hungryman/hungryman-ui/src/DiningSearches.js
         git add .
