@@ -9,6 +9,7 @@ jobs:
      - run: |
         commit=$(date +%s)
         echo $commit
+        echo `pwd`
         git config --global user.email "vipins2@vmware.com"
         git config --global user.name "Vipin M S"
         git checkout main
