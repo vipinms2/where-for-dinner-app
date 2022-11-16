@@ -9,12 +9,11 @@ jobs:
      - run: |
         commit=$(date +%s)
         echo $commit
-        echo `pwd`
         git config --global user.email "vipins2@vmware.com"
         git config --global user.name "Vipin M S"
         git checkout main
         git pull
-        perl -p -i -e "s/Results[0-9]+/Results$commit/g" ~/hungryman/hungryman-ui/src/DiningSearches.js
+        perl -p -i -e "s/Results[0-9]+/Results$commit/g" where-for-dinner-app-ui/src/DiningSearches.js
         git add .
         git commit -m $commit
         git push
