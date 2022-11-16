@@ -1,0 +1,10 @@
+name: Update File
+on:
+  workflow_dispatch:
+jobs:
+  runMultipleCommands:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v1
+     - run: |
+        echo "A initial message"
