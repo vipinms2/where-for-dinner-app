@@ -18,16 +18,9 @@ spec:
       apiVersion: services.apps.tanzu.vmware.com/v1alpha1
       kind: ResourceClaim
       name: rmq-where-for-dinner
-  resources:     
-    requests:         
-      memory: "500M"
-      cpu: "100m"
-    limits:         
-      memory: "750M"
-      cpu: "1500m" 
   source:
     git:
-      url: https://github.com/vipinms2/where-for-dinner-app
+      url: <https URL for your generated project's Git repository>
       ref:
         branch: main
     subPath: where-for-dinner-search-proc
