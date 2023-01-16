@@ -1,6 +1,6 @@
-SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='<SOURCE_IMAGE>/where-for-dinner-search-source')
+SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='your-registry.io/project/where-for-dinner-search-source')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
-NAMESPACE = os.getenv("NAMESPACE", default='<NAMESPACE>')
+NAMESPACE = os.getenv("NAMESPACE", default='default')
 
 k8s_custom_deploy(
     'where-for-dinner-search',
@@ -18,5 +18,5 @@ k8s_custom_deploy(
     ]
 )
 
-k8s_resource('where-for-dinner-search', port_forwards=["<PORT>:8080"],
+k8s_resource('where-for-dinner-search', port_forwards=["8080:8080"],
     extra_pod_selectors=[{'carto.run/workload-name': 'where-for-dinner-search', 'app.kubernetes.io/component': 'run'}])
