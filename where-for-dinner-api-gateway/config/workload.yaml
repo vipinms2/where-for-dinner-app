@@ -11,6 +11,13 @@ spec:
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
+  resources:     
+    requests:         
+      memory: "500M"
+      cpu: "100m"
+    limits:         
+      memory: "750M"
+      cpu: "1000m" 
   source:
     git:
       url: <https URL for your generated project's Git repository>
