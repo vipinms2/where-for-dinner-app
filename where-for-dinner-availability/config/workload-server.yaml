@@ -3,7 +3,7 @@ kind: Workload
 metadata:
   name: where-for-dinner-availability
   labels:
-    apps.tanzu.vmware.com/workload-type: web
+    apps.tanzu.vmware.com/workload-type: server
     app.kubernetes.io/part-of: where-for-dinner-availability
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
     networking.knative.dev/visibility: cluster-local
@@ -12,6 +12,11 @@ spec:
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
+  - name: ports
+    value:
+    - port: 80
+      containerPort: 8080
+      name: http
   serviceClaims:
   - name: rmq
     ref:
