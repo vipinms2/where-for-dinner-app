@@ -16,7 +16,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.5</spring-cloud.version>
-		<spring-cloud-bindings.version>1.10.0</spring-cloud-bindings.version>
+		<spring-cloud-bindings.version>1.11.0</spring-cloud-bindings.version>
 		<snakeyaml.version>1.32</snakeyaml.version>
 	</properties>
 	<dependencies>
@@ -98,7 +98,7 @@
     <repositories>
         <repository>
             <id>spring-releases</id>
-            <url>https://repo.spring.io/release/</url>
+            <url>https://repo1.maven.org/maven2/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
