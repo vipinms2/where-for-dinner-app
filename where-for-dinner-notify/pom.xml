@@ -66,7 +66,7 @@
     <repositories>
         <repository>
             <id>spring-releases</id>
-            <url>https://repo.spring.io/release/</url>
+            <url>https://repo1.maven.org/maven2/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -79,7 +79,7 @@
 	    <pluginRepository>
 	        <id>spring-release</id>
 	        <name>Spring release</name>
-	        <url>https://repo.spring.io/release</url>
+	        <url>https://repo1.maven.org/maven2/</url>
 	    </pluginRepository>
 	</pluginRepositories>
     <build>
