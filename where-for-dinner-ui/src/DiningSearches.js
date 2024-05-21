@@ -16,7 +16,7 @@ function DiningSearches(props)
         <div name="diningSearches" id="diningSearches">
           <div className="bannerHeader"> 
             <div className="bannerCenter">
-            <label className="searchesHeader">Submitted Searches And Results1716310802</label>
+            <label className="searchesHeader">Submitted Searches And Results1716318001</label>
             </div>      	
           </div>           
           {searches}
